@@ -1,0 +1,33 @@
+POST http://appsmoya.ngrok.io/adoweb/php/get_files_a.php
+content-Type:application/json
+
+{
+    "dir":"z:/Pacientes Moya Ortodoncia/*6000*",
+    "directory":"1. Fotografias Yessica Garces Muñoz"
+}
+
+###
+POST http://appsmoya.ngrok.io/adoweb/php/get_files_b.php
+content-Type:application/json
+
+{
+    "dir":"z:/Pacientes Moya Ortodoncia/*6000*",
+    "directory":"1. Fotografias Yessica Garces Muñoz",
+    "d3":"3 Febrero 2018"
+}
+
+###
+POST http://appsmoya.ngrok.io/adoweb/php/get_files_image.php
+content-Type:application/json
+
+{
+    "dir":"z:/Pacientes Moya Ortodoncia/*6000*",
+    "directory":"1. Fotografias Yessica Garces Muñoz",
+    "d3":"3 Febrero 2018",
+    "imageFile":"DSC_7041.JPG"}
+
+###
+POST http://appsmoya.ngrok.io/adoweb/php/imageAsignaFoto.php
+content-Type:application/json
+
+{"historia":"6414","foto":"foto","database":"ado"}
